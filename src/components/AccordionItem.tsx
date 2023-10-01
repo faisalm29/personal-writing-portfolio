@@ -1,18 +1,12 @@
-import { RefObject, useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { AccordionProps } from "./types";
 import Dropdown from "./Icon/Dropdown";
 
 type AccordionItemProps = {
   item: AccordionProps;
-  isOpen: boolean;
-  btnOnClick: () => void;
 };
 
-const AccordionItem = ({
-  item,
-  isOpen,
-  btnOnClick,
-}: AccordionItemProps): JSX.Element => {
+const AccordionItem = ({ item }: AccordionItemProps): JSX.Element => {
   const [visibility, setVisibility] = useState(false);
   const contentRef = useRef<HTMLDivElement>(null);
   const [height, setHeight] = useState(0);
