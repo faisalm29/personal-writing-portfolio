@@ -6,7 +6,6 @@ import { usePathname } from "next/navigation";
 
 const Works = () => {
   const pathName = usePathname();
-  console.log(pathName);
   return (
     <section className="mb-48">
       {pathName === "/" ? (

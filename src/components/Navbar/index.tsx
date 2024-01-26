@@ -8,8 +8,11 @@ import { usePathname } from "next/navigation";
 
 const links = [
   { name: "Works", url: "/work" },
-  { name: "Resume", url: "/resume" },
-  { name: "Contact", url: "/contact" },
+  {
+    name: "Resume",
+    url: "https://drive.usercontent.google.com/download?id=1rVRtU6YdI4Dwv_HdgJyuqc_wV_KULtdL&export=download&authuser=0&confirm=t&uuid=a09d75ca-1894-4aa5-9df8-5129241edcdb&at=APZUnTXNAH9BJo-LqVwiAMO-NdEn:1703679281725",
+  },
+  { name: "Contact", url: "mailto:faisal.muhammad2911@gmail.com" },
 ];
 
 const Navbar = () => {

@@ -1,4 +1,9 @@
+import { Metadata } from "next";
 import SocialMedias from "@/components/SocialMedias";
+
+export const metadata: Metadata = {
+  title: "Social Media",
+};
 
 const SocialMediasPage = () => {
   return (
