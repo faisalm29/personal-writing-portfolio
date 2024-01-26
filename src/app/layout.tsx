@@ -24,6 +24,17 @@ export const metadata: Metadata = {
     default: "Faisal Muhammad - Writing Portfolio",
   },
   description: "Writing portfolio",
+  metadataBase: new URL("https://personal-writing-portfolio.vercel.app"),
+  alternates: {
+    canonical: "/",
+    languages: {
+      "en-Us": "/en-US",
+      "id-ID": "/id-ID",
+    },
+  },
+  openGraph: {
+    images: "/opengraph-image.jpg",
+  },
 };
 
 export default function RootLayout({
