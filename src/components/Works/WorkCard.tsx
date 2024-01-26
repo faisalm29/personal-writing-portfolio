@@ -1,5 +1,8 @@
+"use client";
+
 import Image from "next/legacy/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 type WorkCardProps = {
   type: string;
@@ -9,6 +12,7 @@ type WorkCardProps = {
 };
 
 const WorkCard = ({ work }: { work: WorkCardProps }) => {
+  const pathName = usePathname();
   return (
     <Link
       href={work.href}
@@ -25,9 +29,15 @@ const WorkCard = ({ work }: { work: WorkCardProps }) => {
         />
       </div>
       <div className="lg:col-span-6">
-        <h3 className="mb-4 text-m-h5 md:text-t-h5 lg:text-d-h5">
-          {work.type}
-        </h3>
+        {pathName === "/" ? (
+          <h4 className="mb-4 text-m-h5 md:text-t-h5 lg:text-d-h5">
+            {work.type}
+          </h4>
+        ) : (
+          <h2 className="mb-4 text-m-h5 md:text-t-h5 lg:text-d-h5">
+            {work.type}
+          </h2>
+        )}
         <p>{work.description}</p>
       </div>
     </Link>

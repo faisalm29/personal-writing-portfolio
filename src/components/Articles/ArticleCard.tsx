@@ -24,9 +24,9 @@ const ArticleCard = ({ article }: { article: ArticleProps }) => {
         className="mb-4"
       />
       <div>
-        <h3 className="mb-4 text-m-h5 md:text-t-h5 lg:text-d-h5">
+        <h2 className="mb-4 text-m-h5 md:text-t-h5 lg:text-d-h5">
           {article.name}
-        </h3>
+        </h2>
         <p>{article.description}</p>
       </div>
     </a>
