@@ -1,0 +1,26 @@
+[
+  {
+    "type": "Article",
+    "thumbnail": "/thumbnail/works/article.jpg",
+    "description": "Passionately created and carefully researched articles on various themes such as psychology, productivity, popular culture, health, and community empowerment.",
+    "href": "/work/article"
+  },
+  {
+    "type": "Social Media",
+    "thumbnail": "/thumbnail/works/social-media.jpg",
+    "description": "Social media content that I have written with the aim of increasing awareness of the inland areas of Indonesia, sharing insights, or just entertainment.",
+    "href": "/work/social-media"
+  },
+  {
+    "type": "Fundraising Campaign",
+    "thumbnail": "/thumbnail/works/campaign.jpg",
+    "description": "Fundraising campaigns for various purposes, from health to education.",
+    "href": "/work/campaign"
+  },
+  {
+    "type": "Radio Script",
+    "thumbnail": "/thumbnail/works/radio-script.jpg",
+    "description": "The radio broadcast script that I wrote during my time as an assistant producer at B Radio Bandung.",
+    "href": "https://drive.usercontent.google.com/download?id=1QuCwe_iV9-HGhMe2VnWWWgkie_Fu9QPu&export=download&authuser=0&confirm=t&uuid=926de1cb-a935-44f4-b203-e9ed8708f624&at=APZUnTVfhGX3EPNfdxTxoWRWhlcj:1700727244670"
+  }
+]
