@@ -11,7 +11,7 @@ const ArticleCard = ({ article }: { article: ArticleProps }) => {
   return (
     <a
       href={article.href}
-      target="__blank"
+      target="_blank"
       className="md:col-span-4 lg:col-span-6"
     >
       <Image

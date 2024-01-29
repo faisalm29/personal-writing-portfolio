@@ -1,16 +1,16 @@
 import { Metadata } from "next";
-import SocialMedias from "@/components/SocialMedias";
+import SocialMedia from "@/components/SocialMedia";
 
 export const metadata: Metadata = {
   title: "Social Media",
 };
 
-const SocialMediasPage = () => {
+const SocialMediaPage = () => {
   return (
     <main className="mx-auto mt-[272px] w-full px-4 md:max-w-[674px] lg:max-w-[960px]">
-      <SocialMedias />
+      <SocialMedia />
     </main>
   );
 };
 
-export default SocialMediasPage;
+export default SocialMediaPage;

@@ -11,7 +11,7 @@ const CampaignCard = ({ campaign }: { campaign: CampaignCardProps }) => {
   return (
     <a
       href={campaign.href}
-      target="__blank"
+      target="_blank"
       className="md:col-span-4 lg:col-span-4"
     >
       <Image

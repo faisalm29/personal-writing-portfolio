@@ -18,6 +18,12 @@
     "href": "/work/campaign"
   },
   {
+    "type": "Press Release",
+    "thumbnail": "/thumbnail/works/press-release.jpg",
+    "description": "Records of achievements and activities from the company where I work which have been published in online media.",
+    "href": "/work/press-release"
+  },
+  {
     "type": "Radio Script",
     "thumbnail": "/thumbnail/works/radio-script.jpg",
     "description": "The radio broadcast script that I wrote during my time as an assistant producer at B Radio Bandung.",

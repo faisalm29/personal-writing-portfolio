@@ -17,7 +17,7 @@ const SocialMediaCard = ({
   return (
     <a
       href={socialMedia.href}
-      target="__blank"
+      target="_blank"
       className="mb-12 block last:mb-0 md:mb-16"
     >
       {/* Heading */}
