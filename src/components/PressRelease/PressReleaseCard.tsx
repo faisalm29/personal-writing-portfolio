@@ -29,12 +29,12 @@ const PressReleaseCard = ({
         {pressRelease.title}
       </h2>
       <p className="mb-2">Release at:</p>
-      <div className="flex flex-wrap items-center justify-start gap-x-4">
+      <div className="flex flex-wrap justify-start gap-x-4">
         {pressRelease.releaseAt.map((publication, id) => (
           <a
             key={id}
             href={publication.href}
-            className="mb-2 flex gap-x-4 border-b-[1.5px] border-b-transparent pb-[2px] hover:border-primary-950"
+            className="mb-2 flex items-end gap-x-4 border-b-[1.5px] border-b-transparent pb-[2px] hover:border-primary-950"
             target="_blank"
           >
             {publication.name} <ExternalLink />

@@ -12,8 +12,9 @@ const CampaignCard = ({ campaign }: { campaign: CampaignCardProps }) => {
     <a
       href={campaign.href}
       target="_blank"
-      className="md:col-span-4 lg:col-span-4"
+      className="relative md:col-span-4 lg:col-span-4"
     >
+      <div className="absolute bottom-0 left-0 right-0 top-0 z-20 bg-primary-50 opacity-0 transition-all duration-300 ease-in-out hover:opacity-30"></div>
       <Image
         src={campaign.thumbnail}
         width={2024}

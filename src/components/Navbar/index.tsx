@@ -40,7 +40,7 @@ const Navbar = () => {
   }, [pathName]);
 
   return (
-    <nav className="fixed top-0 z-20 mt-0 w-full p-4">
+    <nav className="fixed top-0 z-30 mt-0 w-full p-4">
       <div className="flex items-center justify-between">
         {/* Logo/Home link */}
         <Link href="/">
@@ -59,7 +59,7 @@ const Navbar = () => {
             <li key={id} className="ml-16 first:ml-0">
               <Link
                 href={link.url}
-                className="rounded-full border-[1px] border-primary-950 px-6 py-[2px] font-haskoy text-primary-950 duration-300 ease-in-out hover:bg-primary-950 hover:text-primary-50"
+                className="rounded-full border-[1px] border-primary-950 px-6 py-[2px] font-haskoy text-primary-950 transition-all duration-300 ease-in-out hover:bg-primary-950 hover:text-primary-50 active:border-primary-800 active:bg-primary-800"
               >
                 {link.name}
               </Link>

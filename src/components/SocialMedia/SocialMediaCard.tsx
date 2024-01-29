@@ -18,8 +18,9 @@ const SocialMediaCard = ({
     <a
       href={socialMedia.href}
       target="_blank"
-      className="mb-12 block last:mb-0 md:mb-16"
+      className="relative mb-12 block last:mb-0 md:mb-16"
     >
+      <div className="absolute bottom-0 left-0 right-0 top-0 z-20 bg-primary-50 opacity-0 transition-all duration-300 ease-in-out hover:opacity-30"></div>
       {/* Heading */}
       <div className="mb-4 flex items-center gap-4">
         <Image
