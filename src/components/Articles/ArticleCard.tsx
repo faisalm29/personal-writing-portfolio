@@ -18,6 +18,7 @@ type ArticleProps = {
 
 const ArticleCard = async ({ article }: { article: ArticleProps }) => {
   const image = await getImage(`${article.thumbnail}`);
+
   return (
     <a
       href={article.href}
