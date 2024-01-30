@@ -18,7 +18,7 @@ const WorkCard = ({ work }: { work: WorkCardProps }) => {
       href={work.href}
       className="relative mb-12 inline-block w-full last:mb-0 md:col-span-4 md:mb-0 lg:grid lg:grid-cols-12 lg:gap-x-6"
     >
-      <div className="absolute bottom-0 left-0 right-0 top-0 z-20 h-full w-full bg-primary-50 opacity-0 transition-all duration-300 ease-in-out hover:opacity-30"></div>
+      <div className="absolute bottom-0 left-0 right-0 top-0 z-20 h-full w-full bg-primary-50 opacity-0 transition-all duration-300 ease-in-out hover:opacity-60"></div>
       <div className="mb-4 lg:col-span-6 lg:mb-0">
         <Image
           src={work.thumbnail}

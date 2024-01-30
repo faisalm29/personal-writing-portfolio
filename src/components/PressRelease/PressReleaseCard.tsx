@@ -34,7 +34,7 @@ const PressReleaseCard = ({
           <a
             key={id}
             href={publication.href}
-            className="mb-2 flex items-end gap-x-4 border-b-[1.5px] border-b-transparent pb-[2px] hover:border-primary-950"
+            className="mb-2 flex items-end gap-x-4 border-b-[1.5px] border-b-transparent pb-[2px] transition-all duration-300 ease-in-out hover:border-primary-950"
             target="_blank"
           >
             {publication.name} <ExternalLink />

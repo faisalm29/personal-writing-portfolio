@@ -40,7 +40,7 @@ const Navbar = () => {
   }, [pathName]);
 
   return (
-    <nav className="fixed top-0 z-30 mt-0 w-full p-4">
+    <nav className="fixed top-0 z-30 mt-0 w-full bg-primary-50 bg-opacity-10 bg-clip-padding p-4 backdrop-blur-sm backdrop-filter">
       <div className="flex items-center justify-between">
         {/* Logo/Home link */}
         <Link href="/">
@@ -87,7 +87,10 @@ const Navbar = () => {
                 key={id}
                 className="mb-16 text-right font-haskoy text-m-h1 font-light last:mb-0"
               >
-                <Link href={link.url} className="">
+                <Link
+                  href={link.url}
+                  className="border-b-[6px] border-b-transparent text-primary-950 transition-all duration-300 ease-in-out hover:border-b-primary-950"
+                >
                   {link.name}
                 </Link>
               </li>

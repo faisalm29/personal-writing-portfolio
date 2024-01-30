@@ -14,7 +14,7 @@ const ArticleCard = ({ article }: { article: ArticleProps }) => {
       target="_blank"
       className="relative md:col-span-4 lg:col-span-6"
     >
-      <div className="absolute bottom-0 left-0 right-0 top-0 z-20 bg-primary-50 opacity-0 transition-all duration-300 ease-in-out hover:opacity-30"></div>
+      <div className="absolute bottom-0 left-0 right-0 top-0 z-20 bg-primary-50 opacity-0 transition-all duration-300 ease-in-out hover:opacity-60"></div>
       <Image
         src={article.thumbnail}
         width={2024}
