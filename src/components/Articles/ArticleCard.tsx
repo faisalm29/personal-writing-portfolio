@@ -1,4 +1,13 @@
 import Image from "next/legacy/image";
+import fs from "node:fs/promises";
+import { getPlaiceholder } from "plaiceholder";
+
+const getImage = async (file: string) => {
+  const src = "./public".concat(file);
+  const buffer = await fs.readFile(src);
+  const plaiceholder = await getPlaiceholder(buffer);
+  return { ...plaiceholder, img: { file } };
+};
 
 type ArticleProps = {
   name: string;
@@ -7,7 +16,8 @@ type ArticleProps = {
   href: string;
 };
 
-const ArticleCard = ({ article }: { article: ArticleProps }) => {
+const ArticleCard = async ({ article }: { article: ArticleProps }) => {
+  const image = await getImage(`${article.thumbnail}`);
   return (
     <a
       href={article.href}
@@ -22,6 +32,8 @@ const ArticleCard = ({ article }: { article: ArticleProps }) => {
         layout="responsive"
         objectFit="cover"
         alt={`${article.name}'s logo`}
+        placeholder="blur"
+        blurDataURL={image.base64}
         className="mb-4"
       />
       <div>

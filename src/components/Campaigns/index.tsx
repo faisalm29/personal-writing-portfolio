@@ -1,7 +1,7 @@
 import CampaignCard from "@/components/Campaigns/CampaignCard";
 import campaigns from "@/contents/campaigns.json";
 
-const Campaigns = () => {
+const Campaigns = async () => {
   return (
     <section>
       <h1 className="mb-12 text-m-h3 md:mb-16 md:text-t-h3 lg:text-d-h3">

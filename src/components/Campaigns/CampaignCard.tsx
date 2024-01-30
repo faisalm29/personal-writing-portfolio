@@ -1,4 +1,13 @@
 import Image from "next/legacy/image";
+import fs from "node:fs/promises";
+import { getPlaiceholder } from "plaiceholder";
+
+const getImage = async (file: string) => {
+  const src = "./public".concat(file);
+  const buffer = await fs.readFile(src);
+  const plaiceholder = await getPlaiceholder(buffer);
+  return { ...plaiceholder, img: { file } };
+};
 
 type CampaignCardProps = {
   thumbnail: string;
@@ -7,7 +16,9 @@ type CampaignCardProps = {
   href: string;
 };
 
-const CampaignCard = ({ campaign }: { campaign: CampaignCardProps }) => {
+const CampaignCard = async ({ campaign }: { campaign: CampaignCardProps }) => {
+  const image = await getImage(`${campaign.thumbnail}`);
+
   return (
     <a
       href={campaign.href}
@@ -23,6 +34,8 @@ const CampaignCard = ({ campaign }: { campaign: CampaignCardProps }) => {
         objectFit="cover"
         alt={`campaign's thumbnail`}
         className="mb-4"
+        blurDataURL={image.base64}
+        placeholder="blur"
       />
 
       <h2 className="mb-4 text-m-h5 md:text-t-h5 lg:text-d-h5">

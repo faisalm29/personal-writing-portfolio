@@ -1,5 +1,14 @@
 import Image from "next/legacy/image";
 import { ExternalLink } from "@/components/Icon";
+import fs from "node:fs/promises";
+import { getPlaiceholder } from "plaiceholder";
+
+const getImage = async (file: string) => {
+  const src = "./public".concat(file);
+  const buffer = await fs.readFile(src);
+  const plaiceholder = await getPlaiceholder(buffer);
+  return { ...plaiceholder, img: { file } };
+};
 
 type PressReleaseProps = {
   thumbnail: string;
@@ -8,11 +17,12 @@ type PressReleaseProps = {
   releaseAt: { name: string; href: string }[];
 };
 
-const PressReleaseCard = ({
+const PressReleaseCard = async ({
   pressRelease,
 }: {
   pressRelease: PressReleaseProps;
 }) => {
+  const image = await getImage(`${pressRelease.thumbnail}`);
   return (
     <div className="md:col-span-4 lg:col-span-4">
       <Image
@@ -22,6 +32,8 @@ const PressReleaseCard = ({
         layout="responsive"
         objectFit="cover"
         alt={`campaign's thumbnail`}
+        placeholder="blur"
+        blurDataURL={image.base64}
         className="mb-4"
       />
       <p className="mb-2 text-sm">{pressRelease.company}</p>
