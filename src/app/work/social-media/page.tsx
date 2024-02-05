@@ -6,11 +6,7 @@ export const metadata: Metadata = {
 };
 
 const SocialMediaPage = () => {
-  return (
-    <main className="mx-auto mt-[272px] w-full px-4 md:max-w-[674px] lg:max-w-[960px]">
-      <SocialMedia />
-    </main>
-  );
+  return <SocialMedia />;
 };
 
 export default SocialMediaPage;

@@ -68,7 +68,11 @@ const Navbar = () => {
         </ul>
 
         {/* Mobile Navbar */}
-        <button className="block md:hidden" onClick={showNavHandler}>
+        <button
+          className="block md:hidden"
+          onClick={showNavHandler}
+          aria-label="Open menu"
+        >
           <HamburgerMenu />
         </button>
       </div>

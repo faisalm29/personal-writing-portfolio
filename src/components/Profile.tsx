@@ -6,7 +6,7 @@ const Profile = async () => {
       <div className="order-last col-span-4 text-center md:order-none md:col-span-5 md:text-left lg:col-span-7">
         <h2 className="mb-6 text-m-h4 md:text-t-h4 lg:text-d-h4">
           Faisal Muhammad.{" "}
-          <span className="text-primary-300">Content Writer.</span>
+          <span className="text-primary-400">Content Writer.</span>
         </h2>
         <p>
           with a demonstrated history of working in the information technology

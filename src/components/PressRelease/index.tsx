@@ -3,7 +3,7 @@ import pressReleases from "@/contents/pressRelease.json";
 
 const PressRelease = () => {
   return (
-    <section className="mb-48">
+    <section>
       <h1 className="mb-12 text-m-h3 md:mb-16 md:text-t-h3 lg:text-d-h3">
         Press Release
       </h1>

@@ -3,7 +3,7 @@ import ArticleCard from "./ArticleCard";
 
 const Articles = () => {
   return (
-    <section className="mb-48">
+    <section>
       <h1 className="mb-4 text-m-h3 md:text-t-h3 lg:text-d-h3">Article</h1>
       <p className="mb-12 text-sm md:mb-16">
         My articles have been published on this company&apos;s and
