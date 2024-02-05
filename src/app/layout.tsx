@@ -4,6 +4,7 @@ import localFont from "next/font/local";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import PageWrapper from "@/components/PageWrapper";
+import NextTopLoader from "nextjs-toploader";
 import "./globals.css";
 
 const inter = Inter({
@@ -47,6 +48,12 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${haskoy.variable} ${inter.variable}`}>
         <Navbar />
+        <NextTopLoader
+          shadow={false}
+          color="#313030"
+          showSpinner={false}
+          height={5}
+        />
         <PageWrapper>{children}</PageWrapper>
         <Footer />
       </body>
