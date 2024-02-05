@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     default: "Faisal Muhammad - Writing Portfolio",
   },
   description: "Writing portfolio",
-  metadataBase: new URL("https://personal-writing-portfolio.vercel.app"),
+  metadataBase: new URL("https://faisal-writing-portfolio.vercel.app/"),
   alternates: {
     canonical: "/",
     languages: {
