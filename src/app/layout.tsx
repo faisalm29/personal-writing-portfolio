@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import PageWrapper from "@/components/PageWrapper";
 import NextTopLoader from "nextjs-toploader";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
 
 const inter = Inter({
@@ -57,6 +58,7 @@ export default function RootLayout({
         <PageWrapper>{children}</PageWrapper>
         <Footer />
       </body>
+      <GoogleAnalytics gaId="G-56EVX16ND7" />
     </html>
   );
 }
