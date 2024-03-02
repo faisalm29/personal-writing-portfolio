@@ -8,7 +8,7 @@ const Works = () => {
       <WorkSectionTitle />
       <div className="block gap-0 md:grid md:grid-cols-8 md:gap-x-6 md:gap-y-16 lg:grid-cols-1 lg:gap-x-0">
         {works.map((work, id) => (
-          <WorkCard key={id} work={work} />
+          <WorkCard key={id} id={id} work={work} />
         ))}
       </div>
     </section>

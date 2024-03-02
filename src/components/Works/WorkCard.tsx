@@ -18,12 +18,13 @@ type WorkCardProps = {
   description: string;
 };
 
-const WorkCard = async ({ work }: { work: WorkCardProps }) => {
+const WorkCard = async ({ work, id }: { work: WorkCardProps; id: number }) => {
   const { href, thumbnail, ...body } = work;
   const image = await getImage(`${thumbnail}`);
   return (
     <Link
       href={href}
+      target={`${id === 4 ? "_blank" : "_self"}`}
       className="relative mb-12 inline-block w-full last:mb-0 md:col-span-4 md:mb-0 lg:grid lg:grid-cols-12 lg:gap-x-6"
     >
       <div className="absolute bottom-0 left-0 right-0 top-0 z-20 h-full w-full bg-primary-50 opacity-0 transition-all duration-300 ease-in-out hover:opacity-60"></div>

@@ -1,19 +1,21 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { HamburgerMenu, Close } from "@/components/Icon";
 import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
+import dynamic from "next/dynamic";
 
 const links = [
   { name: "Works", url: "/work" },
   {
     name: "Resume",
-    url: "https://drive.usercontent.google.com/download?id=1rVRtU6YdI4Dwv_HdgJyuqc_wV_KULtdL&export=download&authuser=0&confirm=t&uuid=a09d75ca-1894-4aa5-9df8-5129241edcdb&at=APZUnTXNAH9BJo-LqVwiAMO-NdEn:1703679281725",
+    url: "https://drive.google.com/file/d/1_TCfHxlMP3UGOqs3CI1AFRtg8uYiIbxp/view?usp=sharing",
   },
   { name: "Contact", url: "mailto:faisal.muhammad2911@gmail.com" },
 ];
+
+const Logo = dynamic(() => import("@/components/Navbar/Logo"), { ssr: false });
 
 const Navbar = () => {
   const year = new Date().getFullYear();
@@ -43,21 +45,14 @@ const Navbar = () => {
     <nav className="fixed top-0 z-30 mt-0 w-full bg-primary-50 bg-opacity-10 bg-clip-padding p-4 backdrop-blur-sm backdrop-filter">
       <div className="flex items-center justify-between">
         {/* Logo/Home link */}
-        <Link href="/">
-          <Image
-            src="/faisal.svg"
-            alt="Faisal Logo"
-            width={48}
-            height={48}
-            priority
-          />
-        </Link>
+        <Logo />
 
         {/* Desktop Navbar */}
         <ul className="hidden items-center md:flex">
           {links.map((link, id) => (
             <li key={id} className="ml-16 first:ml-0">
               <Link
+                target={`${id === 1 ? "_blank" : "_self"}`}
                 href={link.url}
                 className="rounded-full border-[1px] border-primary-950 px-6 py-[2px] font-haskoy text-primary-950 transition-all duration-300 ease-in-out hover:bg-primary-950 hover:text-primary-50 active:border-primary-800 active:bg-primary-800"
               >
