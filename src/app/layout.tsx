@@ -5,7 +5,6 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import PageWrapper from "@/components/PageWrapper";
 import NextTopLoader from "nextjs-toploader";
-import { GoogleAnalytics } from "@next/third-parties/google";
 import "./globals.css";
 
 const inter = Inter({
@@ -38,9 +37,6 @@ export const metadata: Metadata = {
   openGraph: {
     images: "/opengraph-image.jpg",
   },
-  verification: {
-    google: "UWlV7A0yLYtgoLaOTlWOpnDDv8qEWu669sWa_lrB5a0",
-  },
 };
 
 export default function RootLayout({
@@ -61,7 +57,6 @@ export default function RootLayout({
         <PageWrapper>{children}</PageWrapper>
         <Footer />
       </body>
-      <GoogleAnalytics gaId="G-56EVX16ND7" />
     </html>
   );
 }
