@@ -5,7 +5,7 @@ export default async function sitemap() {
     "/work/article",
     "/work/fundraising-campaign",
     "/work/press-release",
-    "work/social-media-content",
+    "/work/social-media-content",
   ].map((route) => ({
     url: `https://faisalm.xyz${route}`,
     lastModified: new Date().toISOString().split("T")[0],
