@@ -3,6 +3,8 @@ import Articles from "@/components/Articles";
 
 export const metadata: Metadata = {
   title: "Article",
+  description:
+    "Passionately created and carefully researched articles on various themes.",
 };
 
 const ArticlePage = () => {

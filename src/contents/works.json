@@ -1,31 +1,31 @@
 [
   {
     "type": "Article",
-    "thumbnail": "/thumbnail/works/article.jpg",
+    "thumbnail": "/thumbnail/work/article.jpg",
     "description": "Passionately created and carefully researched articles on various themes such as psychology, productivity, popular culture, health, and community empowerment.",
     "href": "/work/article"
   },
   {
-    "type": "Social Media",
-    "thumbnail": "/thumbnail/works/social-media.jpg",
+    "type": "Social Media Content",
+    "thumbnail": "/thumbnail/work/social-media-content.jpg",
     "description": "Social media content that I have written with the aim of increasing awareness of the inland areas of Indonesia, sharing insights, or just entertainment.",
-    "href": "/work/social-media"
+    "href": "/work/social-media-content"
   },
   {
     "type": "Fundraising Campaign",
-    "thumbnail": "/thumbnail/works/campaign.jpg",
+    "thumbnail": "/thumbnail/work/fundraising-campaign.jpg",
     "description": "Fundraising campaigns for various purposes, from health to education.",
-    "href": "/work/campaign"
+    "href": "/work/fundraising-campaign"
   },
   {
     "type": "Press Release",
-    "thumbnail": "/thumbnail/works/press-release.jpg",
+    "thumbnail": "/thumbnail/work/press-release.jpg",
     "description": "Records of achievements and activities from the company where I work which have been published in online media.",
     "href": "/work/press-release"
   },
   {
     "type": "Radio Script",
-    "thumbnail": "/thumbnail/works/radio-script.jpg",
+    "thumbnail": "/thumbnail/work/radio-script.jpg",
     "description": "The radio broadcast script that I wrote during my time as an assistant producer at B Radio Bandung.",
     "href": "https://drive.google.com/file/d/1QuCwe_iV9-HGhMe2VnWWWgkie_Fu9QPu/view?usp=sharing"
   }
