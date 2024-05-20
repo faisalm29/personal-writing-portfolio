@@ -10,7 +10,7 @@ const links = [
   { name: "Works", url: "/work" },
   {
     name: "Resume",
-    url: "https://drive.google.com/file/d/1yUYQpp4Z5ECr49i98JkUFNeb0_laXkny/view?usp=sharing",
+    url: "https://drive.google.com/file/d/1vNbuLjUXKEwuwkGFScHtzYAh6KPfxI93/view?usp=sharing",
   },
   { name: "Contact", url: "mailto:faisal.muhammad2911@gmail.com" },
 ];
