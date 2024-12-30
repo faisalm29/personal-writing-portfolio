@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Profile = async () => {
   return (
-    <section className="mb-48 grid h-auto grid-cols-4 items-start gap-6 md:grid-cols-8 md:grid-rows-1 lg:grid-cols-12">
+    <section className="mb-48 mt-36 grid h-auto grid-cols-4 items-start gap-6 md:grid-cols-8 md:grid-rows-1 lg:grid-cols-12">
       <div className="order-last col-span-4 text-center md:order-none md:col-span-5 md:text-left lg:col-span-7">
         <h2 className="mb-6 text-m-h4 md:text-t-h4 lg:text-d-h4">
           Faisal Muhammad.{" "}
