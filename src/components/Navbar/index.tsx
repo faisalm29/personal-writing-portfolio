@@ -7,7 +7,7 @@ import { usePathname } from "next/navigation";
 import dynamic from "next/dynamic";
 
 const links = [
-  { name: "Works", url: "/work" },
+  { name: "Work", url: "/work" },
   {
     name: "Resume",
     url: "https://drive.google.com/file/d/1vNbuLjUXKEwuwkGFScHtzYAh6KPfxI93/view?usp=sharing",
