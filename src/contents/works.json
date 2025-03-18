@@ -12,6 +12,12 @@
     "href": "/work/fundraising-campaign"
   },
   {
+    "type": "Article",
+    "thumbnail": "/thumbnail/work/article.jpg",
+    "description": "Passionately created and carefully researched articles on various themes such as psychology, productivity, popular culture, health, and community empowerment.",
+    "href": "/work/article"
+  },
+  {
     "type": "Press Release",
     "thumbnail": "/thumbnail/work/press-release.jpg",
     "description": "Records of achievements and activities from the company where I work which have been published in online media.",
@@ -23,10 +29,4 @@
     "description": "The radio broadcast script that I wrote during my time as an assistant producer at B Radio Bandung.",
     "href": "https://drive.google.com/file/d/1QuCwe_iV9-HGhMe2VnWWWgkie_Fu9QPu/view?usp=sharing"
   },
-  {
-    "type": "Article",
-    "thumbnail": "/thumbnail/work/article.jpg",
-    "description": "Passionately created and carefully researched articles on various themes such as psychology, productivity, popular culture, health, and community empowerment.",
-    "href": "/work/article"
-  }
 ]
